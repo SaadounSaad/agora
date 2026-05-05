@@ -1,0 +1,137 @@
+/* ===== Agora Hub — RTL overrides ===== */
+
+/* Base direction */
+html[dir="rtl"] body {
+  text-align: right;
+}
+
+/* Flip horizontal SVG arrows */
+html[dir="rtl"] .idx-arrow,
+html[dir="rtl"] .pcard-cta svg,
+html[dir="rtl"] .contact-card-cta svg,
+html[dir="rtl"] .detail-actions .btn-primary svg {
+  transform: scaleX(-1);
+}
+
+/* Nav links spacing */
+html[dir="rtl"] .nav-links {
+  direction: rtl;
+}
+
+/* Hero meta separators */
+html[dir="rtl"] .hero-meta > div + div {
+  border-left: none;
+  border-right: 1px solid var(--line);
+  padding-left: 0;
+  padding-right: 24px;
+}
+
+html[dir="rtl"] .hero-meta > div:first-child {
+  padding-right: 0;
+  padding-left: 24px;
+  border-right: none;
+}
+
+/* Index list columns */
+html[dir="rtl"] .index-head,
+html[dir="rtl"] .idx-row {
+  direction: rtl;
+}
+
+/* Breadcrumbs */
+html[dir="rtl"] .crumbs {
+  direction: rtl;
+}
+
+html[dir="rtl"] .crumbs .sep {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+/* Section counter / eyebrow */
+html[dir="rtl"] .section-counter,
+html[dir="rtl"] .mihrab-eyebrow,
+html[dir="rtl"] .eyebrow,
+html[dir="rtl"] .about-eyebrow {
+  letter-spacing: 0;
+}
+
+/* Monospace counters — keep LTR for §, numbers */
+html[dir="rtl"] .feature-num,
+html[dir="rtl"] .detail-section-head .num,
+html[dir="rtl"] .section-counter,
+html[dir="rtl"] .stat {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Stack list */
+html[dir="rtl"] .stack-item {
+  flex-direction: row-reverse;
+}
+
+/* Footer grid */
+html[dir="rtl"] .footer-grid {
+  direction: rtl;
+}
+
+/* Tweaks panel — keep LTR for labels/inputs */
+html[dir="rtl"] .tweaks-panel {
+  left: 16px;
+  right: auto;
+}
+
+/* Var switcher */
+html[dir="rtl"] .var-switch {
+  direction: rtl;
+}
+
+/* Orbit cards */
+html[dir="rtl"] .orb-card {
+  text-align: center;
+}
+
+/* Detail meta */
+html[dir="rtl"] .detail-meta-row {
+  direction: rtl;
+}
+
+/* Pcard corner triangle — flip for RTL */
+html[dir="rtl"] .pcard-corner {
+  left: 0;
+  right: auto;
+  transform: scaleX(-1);
+}
+
+/* Bio grid */
+html[dir="rtl"] .bio-grid {
+  direction: rtl;
+}
+
+/* Contact grid */
+html[dir="rtl"] .contact-grid {
+  direction: rtl;
+}
+
+/* Blockquote — right border */
+html[dir="rtl"] blockquote {
+  border-left: none;
+  border-right: 3px solid var(--accent);
+  padding-left: 0;
+  padding-right: 32px;
+}
+
+/* Tag list */
+html[dir="rtl"] .pcard-foot {
+  direction: rtl;
+}
+
+html[dir="rtl"] .pcard-tags {
+  direction: rtl;
+}
+
+/* Scroll indicator */
+html[dir="rtl"] .mihrab-scroll {
+  left: auto;
+  right: 40px;
+}
